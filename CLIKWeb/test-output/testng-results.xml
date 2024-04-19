@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="50670" started-at="2024-04-18T14:44:30Z" finished-at="2024-04-18T14:45:21Z">
+  <suite name="Suite" duration-ms="34274" started-at="2024-04-19T08:09:42Z" finished-at="2024-04-19T08:10:16Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="50670" started-at="2024-04-18T14:44:30Z" finished-at="2024-04-18T14:45:21Z">
+    <test name="Test" duration-ms="34274" started-at="2024-04-19T08:09:42Z" finished-at="2024-04-19T08:10:16Z">
       <class name="CLIK.CLIKWeb.CLIKLogin">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:CLIK.CLIKWeb.CLIKLogin@5383967b]" name="beforeTest" is-config="true" duration-ms="28259" started-at="2024-04-18T14:44:30Z" finished-at="2024-04-18T14:44:58Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:CLIK.CLIKWeb.CLIKLogin@5383967b]" name="beforeTest" is-config="true" duration-ms="11855" started-at="2024-04-19T08:09:42Z" finished-at="2024-04-19T08:09:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="Login_failure()[pri:1, instance:CLIK.CLIKWeb.CLIKLogin@5383967b]" name="Login_failure" duration-ms="13300" started-at="2024-04-18T14:44:58Z" finished-at="2024-04-18T14:45:12Z">
+        <test-method status="PASS" signature="Login_failure()[pri:1, instance:CLIK.CLIKWeb.CLIKLogin@5383967b]" name="Login_failure" duration-ms="13324" started-at="2024-04-19T08:09:54Z" finished-at="2024-04-19T08:10:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_failure -->
-        <test-method status="FAIL" signature="Login_success()[pri:2, instance:CLIK.CLIKWeb.CLIKLogin@5383967b]" name="Login_success" duration-ms="8428" started-at="2024-04-18T14:45:12Z" finished-at="2024-04-18T14:45:20Z">
+        <test-method status="FAIL" signature="Login_success()[pri:2, instance:CLIK.CLIKWeb.CLIKLogin@5383967b]" name="Login_success" duration-ms="8404" started-at="2024-04-19T08:10:07Z" finished-at="2024-04-19T08:10:16Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="root"]/div[2]/div/div[1]/div[1]/div/span"}
@@ -24,9 +24,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.10.0', revision: 'c14d967899'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fd809d438601349730d1c51de279b33f, findElement {using=xpath, value=//*[@id="root"]/div[2]/div/div[1]/div[1]/div/span}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.106, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Users\AHMEDB~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60099}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60099/devtoo..., se:cdpVersion: 123.0.6312.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fd809d438601349730d1c51de279b33f]]>
+Command: [5848091e02ea442de3c06461cdd5ae31, findElement {using=xpath, value=//*[@id="root"]/div[2]/div/div[1]/div[1]/div/span}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.106, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Users\AHMEDB~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54689}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54689/devtoo..., se:cdpVersion: 123.0.6312.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5848091e02ea442de3c06461cdd5ae31]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="root"]/div[2]/div/div[1]/div[1]/div/span"}
@@ -35,9 +35,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.10.0', revision: 'c14d967899'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fd809d438601349730d1c51de279b33f, findElement {using=xpath, value=//*[@id="root"]/div[2]/div/div[1]/div[1]/div/span}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.106, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Users\AHMEDB~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60099}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60099/devtoo..., se:cdpVersion: 123.0.6312.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fd809d438601349730d1c51de279b33f
+Command: [5848091e02ea442de3c06461cdd5ae31, findElement {using=xpath, value=//*[@id="root"]/div[2]/div/div[1]/div[1]/div/span}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.106, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\Users\AHMEDB~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54689}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54689/devtoo..., se:cdpVersion: 123.0.6312.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5848091e02ea442de3c06461cdd5ae31
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -85,11 +85,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_success -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:CLIK.CLIKWeb.CLIKLogin@5383967b]" name="afterTest" is-config="true" duration-ms="659" started-at="2024-04-18T14:45:20Z" finished-at="2024-04-18T14:45:21Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:CLIK.CLIKWeb.CLIKLogin@5383967b]" name="afterTest" is-config="true" duration-ms="668" started-at="2024-04-19T08:10:16Z" finished-at="2024-04-19T08:10:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- CLIK.CLIKWeb.CLIKLogin -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
