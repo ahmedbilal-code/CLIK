@@ -7,8 +7,10 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.testng.annotations.BeforeTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.devtools.v112.indexeddb.model.Key;
 import org.testng.annotations.AfterTest;
 
 public class CLIKLogin {
@@ -60,7 +62,7 @@ public class CLIKLogin {
 
 		System.out.println(Failure_msg);
 		
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 		
 		
 	}
@@ -73,23 +75,23 @@ public class CLIKLogin {
 		System.out.println("Login Success TC initiated...");
 
 		driver.findElement(By.xpath("//*[@id=\"root\"]/div[2]/div/form/div[1]/div/div/div/input")).click();
-
-		driver.findElement(By.xpath("//*[@id=\"root\"]/div[2]/div/form/div[1]/div/div/div/input")).clear();
-		driver.findElement(By.xpath("//*[@id=\"root\"]/div[2]/div/form/div[1]/div/div/div/input")).sendKeys("ahmed.bilal+admin@fusiontech.global");
-		
-		driver.findElement(By.xpath("//*[@id=\"root\"]/div[2]/div/form/div[2]/div/div/div/input")).click();
-
-		driver.findElement(By.xpath("//*[@id=\"root\"]/div[2]/div/form/div[2]/div/div/div/input")).clear();
-		driver.findElement(By.xpath("//*[@id=\"root\"]/div[2]/div/form/div[2]/div/div/div/input")).sendKeys("Liverpool1");
-		
 		
 		Thread.sleep(3000);
+		
+		driver.findElement(By.xpath("//*[@id=\"root\"]/div[2]/div/form/div[1]/div/div/div/input")).sendKeys(Keys.chord(Keys.CONTROL,"a", Keys.DELETE));
+		
+		driver.findElement(By.xpath("//*[@id=\"root\"]/div[2]/div/form/div[1]/div/div/div/input")).sendKeys("ahmed.bilal+admin@fusiontech.global");
+		
+		//driver.findElement(By.xpath("//*[@id=\"root\"]/div[2]/div/form/div[2]/div/div/div/input")).click();
 
-//		js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
-//		JavascriptExecutor js = (JavascriptExecutor) driver; js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
-//		
-//		Thread.sleep(3000);
+		Thread.sleep(2000);
+	    driver.findElement(By.name("password")).sendKeys(Keys.chord(Keys.CONTROL,"a", Keys.DELETE));
 
+		//driver.findElement(By.xpath("//*[@id=\\\"root\\\"]/div[2]/div/form/div[2]/div/div/div/input")).sendKeys(Keys.chord(Keys.CONTROL,"a", Keys.DELETE));
+		
+	    driver.findElement(By.name("password")).sendKeys("Liverpool1");
+
+		Thread.sleep(3000);
 		
 		driver.findElement(By.xpath("//*[@id=\"root\"]/div[2]/div/form/button[2]/span")).click();
 		
