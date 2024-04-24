@@ -28,11 +28,15 @@ public class CLIKLogin {
 	}
 
 	@AfterTest
-	public void afterTest() 
+	public void afterTest() throws InterruptedException 
 	{
-		driver.close();
-	}
+		driver.navigate().refresh();
+		
+		Thread.sleep(5000);
 
+		driver.quit();
+	}
+	
 
 	@Test(priority=1)
 	public void Login_failure() throws InterruptedException 
@@ -101,7 +105,7 @@ public class CLIKLogin {
 
 		System.out.println(Dashboard_title);
 		
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 		
 		
 	}
