@@ -30,7 +30,7 @@ public class CLIKLogin {
 	@AfterTest
 	public void afterTest() 
 	{
-		driver.quit();
+		driver.close();
 	}
 
 
